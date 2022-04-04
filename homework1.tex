@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Homework }
+\author{Aleksandra Mitskevich}
+\date{April 2022}
+
+\begin{document}
+
+\maketitle
+
+\[ Condition \]
+ Calculate the integral \[ \oint_C \frac{e^z}{(z-i)^2(z+2)}\ dz\]
+ in the following cases of contour assignment:
+a) \( |z-i|=2;\)
+b) \(z+2-i|=3.\)
+\[ Solution\]
+ a)Point \(z=i\) falls into circle \(|z-i|<2\). We write the function \(\frac{\frac{e^z}{z+2}}{(z-i)^2}\). We calculate the integral:
+ \[ 
+ \oint_C \frac{e^z}{(z-i)^2(z+2)}\ dz =2\pi i \Bigg( \frac{e^z}{z+2} \Bigg)\Bigg|_{z=i}=\]
+ \[= 2\pi i \frac{e^z(z+2)-e^z}{(z+2)^2}\Bigg|_{z=i}=2\pi i \frac{e^z(1+z)}{(z+2)^2}\Bigg|_{z=i}=\frac{2\pi i(1+i)}{(2+i)^2}e^i\]
+ b)Circle \(|z+2-i|=3\) includes both points \(z_1=i\), \(z_2=-2\). We write the integral as the sum of two integrals:
+ \[\oint_C f(z)dz= \oint_{C_1} f(z)dz +  \oint_{C_2} f(z)dz,\]
+where each contour \(C_1\) and \(C_2\) covers only one of the points. In particular, as contour \(C_1\), you can take the circle from the case "a"; Write down the answer:
+\[ \oint_C \frac{e^z}{(z-i)^2(z+2)}\ dz=2\pi i\frac{e^{-2}}{(2+i)^2} + 2\pi i\frac{(1+i)}{(2+i)^2}e^i=\frac{2\pi i}{(2+i)^2}\Big( e^{-2} + e^i (1+i)  \Big)\]
+
+\end{document}
